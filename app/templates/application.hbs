@@ -1,3 +1,27 @@
-<h2 id="title">Welcome to Ember</h2>
+<div id="profile-page-header" class="card nav-bar-fixed" style="margin:0px;">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img src="images/user-profile-bg.jpg" alt="user background">
+  </div>
+  <figure class="card-profile-image">
+    <img src="images/avatar.jpg" alt="profile image" class="circle z-depth-2 responsive-img activator ">
+  </figure>
+  <div class="card-content">
+    <div class="row">
+      <div class="col s3 offset-s2">
+        <h3 class="card-title grey-text text-darken-4">Nitin Kamate</h3>        
+      </div>
+      <div class="col s7 right-align middle">
+        <div class="card-action">
+          {{#link-to 'profile' class="text-blue"}}Profile{{/link-to}}
+          {{#link-to 'blog'}}Blog{{/link-to}}
+          {{#link-to 'about'}}About{{/link-to}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {{outlet}}
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}
