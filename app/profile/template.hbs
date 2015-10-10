@@ -1,2 +1,28 @@
-<h1>Profile</h1>
-{{outlet}}
+<div class="row">
+    <div class="col s6">This div is 6-columns wide</div>
+    <div class="col s6 timeline-column">
+        <h4>Timeline</h4>
+        <div class="timeline_holder">
+            <ul class="cbp_tmtimeline">
+              {{#each model as |profile|}}
+                {{#each profile.events as |event|}}
+                    <li>
+                        <time class="cbp_tmtime">
+                            <span>{{event.year}}</span>
+                        </time>
+                        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                        <div class="cbp_tmlabel">
+                            <h5>{{event.title}}</h5>
+                            <ul>
+                              {{#each event.info as |info|}}
+                                  <li style="list-style: square;">{{info}}</li>
+                              {{/each}}
+                            </ul>
+                        </div>
+                    </li>
+                {{/each}}
+              {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
