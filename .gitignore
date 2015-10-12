@@ -15,3 +15,15 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+.idea/.name
+.idea/dictionaries/kamatn1.xml
+.idea/vcs.xml
+.idea/workspace.xml
+github-io-website.iml
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
