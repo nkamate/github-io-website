@@ -43,6 +43,15 @@ export default Ember.Route.extend({
             icon: 'ICON'
           },
           {
+            year: '2011',
+            title: 'Master of Technology',
+            info: [
+              "Post Graduation in Computer Science & Engineering from M S Ramaiah Institute of Technology"
+            ],
+            id: 'mtech',
+            icon: 'ICON'
+          },
+          {
             year: '2010',
             info: [
               "Full-time college intern spent an year in development of an Event Data Repository",
@@ -52,6 +61,24 @@ export default Ember.Route.extend({
             ],
             title: 'College Intern',
             id: 'intern',
+            icon: 'ICON'
+          },
+          {
+            year: '2009',
+            title: 'Bachelor of Engineering',
+            info: [
+              "Graduation in Computer Science & Engineering from Hira Sugar Institute of Technology"
+            ],
+            id: 'be',
+            icon: 'ICON'
+          },
+          {
+            year: '2000',
+            title: 'Trained on MS Word & PPT',
+            info: [
+              "Grew curious about the word processors and the slide shows, undergone various training on Word and Powerpoint"
+            ],
+            id: 'msword',
             icon: 'ICON'
           },
           {
