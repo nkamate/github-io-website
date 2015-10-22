@@ -13,14 +13,14 @@
   bottom: 0;
   width: 10px;
   background: #afdcf8;
-  left: 20%;
+  left: 10%;
   margin-left: -10px;
 }
 
 /* The date/time */
 .cbp_tmtimeline > li .cbp_tmtime {
   display: block;
-  width: 25%;
+  width: 15%;
   padding-right: 100px;
   position: absolute;
   cursor: pointer;
@@ -47,7 +47,7 @@
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
-  margin: -35px 0 15px 25%;
+  margin: -35px 0 15px 15%;
   background: #3594cb;
   color: #fff;
   padding: 2em;
@@ -107,7 +107,7 @@
   border-radius: 50%;
   box-shadow: 0 0 0 8px #afdcf8;
   text-align: center;
-  left: 20%;
+  left: 10%;
   top: 0;
   margin: 0 0 0 -25px;
 }
@@ -178,4 +178,3 @@
     margin: -55px 5px 0 0px;
   }
 }
-
