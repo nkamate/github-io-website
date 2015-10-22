@@ -4,6 +4,11 @@ export default Ember.Route.extend({
   model: function () {
     return [
       {
+        summary: [
+          "User Experience and Web Application enthusiast",
+          "Full Stack Agile Developer with more than 5 years of experience",
+          "Skilled at learning new concepts quickly and communicating ideas clearly and effectively"
+        ],
         events: [
           {
             year: '2015',
