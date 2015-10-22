@@ -5,7 +5,7 @@
                 <div class="card-title"><h4>About Me</h4></div>
               {{#each model as |profile|}}
                 {{#each profile.summary as |summary|}}
-                    <blockquote> {{summary}}</blockquote>
+                    <blockquote>{{summary}}</blockquote>
                 {{/each}}
               {{/each}}
             </div>
@@ -25,30 +25,33 @@
         </div>
     </div>
 
-    <div class="col l7 s12 m12 timeline-column">
-        <h4 class="center black-text">Timeline</h4>
-
-        <div class="timeline_holder">
-            <ul class="cbp_tmtimeline">
-              {{#each model as |profile|}}
-                {{#each profile.events as |event|}}
-                    <li>
-                        <time class="cbp_tmtime">
-                            <span>{{event.year}}</span>
-                        </time>
-                        <div class="cbp_tmicon cbp_tmicon-phone"></div>
-                        <div class="cbp_tmlabel">
-                            <h5>{{event.title}}</h5>
-                            <ul>
-                              {{#each event.info as |info|}}
-                                  <li style="list-style: square;">{{info}}</li>
-                              {{/each}}
-                            </ul>
-                        </div>
-                    </li>
-                {{/each}}
-              {{/each}}
-            </ul>
+    <div class="col l7 s12 m12 card blue-grey darken-2">
+        <div class="card-content white-text">
+            <div class="card-title"><h4>Timeline</h4></div>
+            <div class="timeline-column">
+                <div class="timeline_holder">
+                    <ul class="cbp_tmtimeline">
+                      {{#each model as |profile|}}
+                        {{#each profile.events as |event|}}
+                            <li>
+                                <time class="cbp_tmtime">
+                                    <span>{{event.year}}</span>
+                                </time>
+                                <div class="cbp_tmicon"><i class="fa fa-trophy"></i></div>
+                                <div class="cbp_tmlabel">
+                                    <h5>{{event.title}}</h5>
+                                    <ul>
+                                      {{#each event.info as |info|}}
+                                          <li style="list-style: square;">{{info}}</li>
+                                      {{/each}}
+                                    </ul>
+                                </div>
+                            </li>
+                        {{/each}}
+                      {{/each}}
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
