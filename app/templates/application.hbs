@@ -1,4 +1,4 @@
-<div id="profile-page-header" class="card nav-bar-fixed" style="margin:0px;">
+<div id="profile-page-header" class="card nav-bar-fixed" style="margin:0">
     <div class="card-image waves-effect waves-block waves-light">
         <img src="images/user-profile-bg.jpg" alt="user background">
     </div>
@@ -12,13 +12,13 @@
 
             <ul class="right hide-on-med-and-down">
                 <li>
-                  {{#link-to "about" tagName="li"}}
-                      <a href={{view.href}}>About</a>
+                  {{#link-to "profile" tagName="li"}}
+                      <a href={{view.href}}>Resume</a>
                   {{/link-to}}
                 </li>
                 <li>
-                  {{#link-to "profile" tagName="li"}}
-                      <a href={{view.href}}>Work</a>
+                  {{#link-to "about" tagName="li"}}
+                      <a href={{view.href}}>Contact</a>
                   {{/link-to}}
                 </li>
                 <li>
@@ -28,10 +28,10 @@
                 </li>
             </ul>
 
-            <ul id="nav-mobile" class="side-nav" style="left: -100px;">
-                <li>{{#link-to 'about'}}About{{/link-to}}</li>
-                <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
-                <li>{{#link-to 'profile'}}Profile{{/link-to}}</li>
+            <ul id="nav-mobile" class="side-nav black-text" style="left: -100px;">
+                <li>{{#link-to 'profile' class="black-text"}} <i>fa fa-sticky-note-o</i> Resume{{/link-to}}</li>
+                <li>{{#link-to 'about' class="black-text"}}Contact{{/link-to}}</li>
+                <li>{{#link-to 'blog' class="black-text"}}Blog{{/link-to}}</li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i
                     class="material-icons">menu</i></a>
